@@ -51,6 +51,11 @@ export default new Router({
       name: '确认订单'
     },
     {
+      path: '/address',
+      component: () => import('../components/pages/address.vue'),
+      name: '地址管理'
+    },
+    {
       path: '*',
       redirect: '/index'
     }
